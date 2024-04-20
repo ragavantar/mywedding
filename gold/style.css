@@ -1,0 +1,286 @@
+body{
+    }
+
+      
+    
+.container {
+    /* max-width: 840px; */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+.intro, .wedding, .reception, .tq {
+    position: relative;
+    height: 80vh;
+    /* max-height: 640px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.intro .top-left-decoration
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 50%;
+    /* clip-path: polygon(0 0, 0 100%, 100% 100%); */
+    /* transform: rotate(90deg); */
+    /* rotate: 90deg; */
+}
+
+.intro .top-right-decoration
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 50%;
+    /* clip-path: polygon(0 0, 100% 0, 100% 100%); */
+}
+
+.intro .image-bottom{
+    position: absolute;
+    bottom: 20%;
+    z-index: -1;
+}
+
+.image-top {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 156px;
+    background: url(https://img.freepik.com/premium-photo/luxurious-golden-flower-banner-wallpaper-generative-ai_887552-4432.jpg);
+    background-repeat: repeat;
+    transform: rotate(180deg);
+}
+
+.wedding .temple {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    max-width: 640px;
+    opacity: 0.75;
+}
+
+.wedding .diya {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    height: 480px;
+}
+
+.reception .left-decor{
+    position: absolute;
+    left: -125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(90deg);
+    width: 480px;
+    z-index: -1;
+}
+
+.reception .right-decor{
+    position: absolute;
+    right: -125px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(-90deg);
+    width: 480px;
+    z-index: -1;
+}
+
+.tree {
+    width: 100%;
+}
+
+.ending {
+    position: absolute;
+    bottom: 0;
+    height: 150px;
+    width: 100%;
+    background: url(https://www.shutterstock.com/image-illustration/seamless-golden-floral-border-260nw-655268008.jpg);
+    background-size: 50%;
+}
+
+.image-end{
+    position: absolute;
+    bottom: 0;
+    z-index: 11;
+    width: 100%;
+    height: 200px;
+    background: url(https://img.freepik.com/premium-photo/luxurious-golden-flower-banner-wallpaper-generative-ai_887552-4432.jpg);
+    background-repeat: repeat;
+}
+
+.tq .end {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: -1;
+}
+
+h1{
+    font-size: 3.5rem;
+    color: #92924b;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #99590e;
+}
+
+h3 {
+    color: #a59083;
+}
+
+.actions{
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    color: #92924b;
+    font-weight: bold;
+    cursor: pointer;
+}
+.calendar, .google-maps, .apple-maps {
+    width: 40px;
+    margin: 10px;
+}
+
+
+@media only screen and (orientation: landscape) {
+    body{
+        /* background-color: #99590e; */
+    }
+    .intro, .wedding, .reception, .tq {
+        height: 90vh;
+    }
+  }
+
+
+    @keyframes corner-flower {
+        from {
+          -webkit-transform: scale(0.2);
+                  transform: scale(0.2);
+                  opacity: 0;
+        }
+        to {
+          -webkit-transform: scale(1);
+                  transform: scale(1);
+                  opacity: 1;
+        }
+      }
+    
+  
+  .intro .top-left-decoration{
+    -webkit-animation: corner-flower 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: corner-flower 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    transform-origin: 0% 0%;
+  }
+
+  .intro .top-right-decoration{
+    -webkit-animation: corner-flower 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    animation: corner-flower 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+    transform-origin: 100% 0;
+  }
+
+  .intro .image-bottom{
+    opacity: 0;
+    animation: corner-flower 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both 1s;
+  }
+
+  .intro-details{
+    animation: corner-flower 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both 1.5s;
+  }
+
+
+
+  @keyframes recep-flower {
+    from {
+        opacity: 0;
+        clip-path: circle(10%);
+    }
+    to {
+        opacity: 1;
+        clip-path: circle(100%);
+    }
+  }
+
+  .animate .left-decor, .animate .right-decor {
+    animation: recep-flower 3s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+
+
+
+  @keyframes glow {
+    from {
+        opacity: 0.2;
+        background: rgb(252, 225, 114);
+        height: 10px;
+        box-shadow: 0 0 1px 8px rgb(255, 196, 59);
+    }
+    to {
+        opacity: 0.5;
+        background: rgb(255, 196, 59);
+        height: 11px;
+        box-shadow: 0 0 15px 20px rgb(252, 225, 114);
+    }
+  }
+
+  .animate .diya-light{
+    height: 20px;
+    width: 10px;
+    display: block;
+    position: absolute;
+    z-index: 22;
+    top: 395px;
+    left: 70px;
+    border-radius: 60%;
+    /* clip-path: ellipse(38% 36%); */
+    animation: glow 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) alternate infinite;
+  }
+
+
+
+  @keyframes text-shadow-drop-center {
+    0% {
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
+    100% {
+        /* font-size: 20px; */
+        letter-spacing: 2px;
+    }
+  }
+  
+  .actions:hover {
+    animation: text-shadow-drop-center 0.5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  }
+
+  @keyframes temple-grow {
+    0% {
+        clip-path: polygon(0 85%, 100% 80%, 100% 100%, 0 100%);
+    }
+    20%{
+        clip-path: polygon(0 69%, 100% 68%, 100% 100%, 0 100%);
+    }
+    40%{
+        clip-path: polygon(0 57%, 100% 57%, 100% 100%, 0 100%);
+    }
+    80%{
+        clip-path: polygon(0 33%, 100% 30%, 100% 100%, 0 100%);
+    }
+    100% {
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+  }
+  
+  .animate .temple {
+    animation: temple-grow 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both 2s;
+  }
