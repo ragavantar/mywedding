@@ -1,3 +1,6 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:Spatie calendar-links
 BEGIN:VEVENT
 SUMMARY:Hari Reception - Rajan Family
 LOCATION:Saaral party hall, Madambakkam
@@ -10,3 +13,4 @@ TRIGGER:-PT24H
 ACTION:DISPLAY
 END:VALARM
 END:VEVENT
+END:VCALENDAR
