@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ragav weds Kishory</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Dancing+Script&amp;display=swap"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="sakura-falling"></div>
+    <div class="intro">
+      <img src="./top1.png" alt="image-top-left" class="top-left-decoration" />
+      <img
+        src="./top2.png"
+        alt="image-top-right"
+        class="top-right-decoration"
+      />
+      <div class="intro-details text-pop-up-top">
+        <h1>C R HariRaagavanthar</h1>
+        <h2>&</h2>
+        <h1>V Kishory</h1>
+      </div>
+    </div>
+
+    <div class="wedding">
+      <img
+        class="swing"
+        src="https://png.pngtree.com/png-clipart/20220605/original/pngtree-floral-hangings-with-blue-flowers-png-image_7963649.png"
+      />
+
+      <img
+        class="chakra"
+        src="https://png.pngtree.com/png-clipart/20210627/original/pngtree-gold-chakra-mandala-on-transparent-background-png-image_6457912.jpg"
+      />
+
+      <img
+        class="temple"
+        src="https://www.silaii.com/cdn/shop/files/Tanjai_1Feet_4.jpg?v=1712118492"
+      />
+      <img
+        class="temple"
+        src="https://www.silaii.com/cdn/shop/files/Tanjai_1Feet_2.jpg?v=1712118492"
+      />
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/timoschaefer/jQuery-Sakura/jquery-sakura.min.js"></script>
+    <script src="./script.js"></script>
+    <script>
+      // var sakura = new Sakura("#sakuta");
+      // domReady
+      // $(function () {
+      //   $("body").sakura();
+      // });
+
+      // // windowLoad
+      // $(window).load(function () {
+      //   $("body").sakura();
+      // });
+    </script>
+  </body>
+
+  <style>
+    .intro {
+      /* display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 80vh; */
+    }
+
+    .intro-details {
+      position: absolute;
+      top: 30%;
+      width: 100%;
+      text-align: center;
+
+      animation-name: text-pop-up-top;
+      animation-duration: 10s;
+      animation-iteration-count: 3;
+      animation-direction: alternate;
+      animation-timing-function: ease;
+    }
+
+    .intro h1 {
+      font-family: "Dancing Script", cursive;
+      font-style: italic;
+      font-size: 3rem;
+      color: #674ea7;
+      margin: 0;
+    }
+
+    .intro h2 {
+      color: #e25c67;
+      margin: 0;
+    }
+
+    .top-right-decoration {
+      position: absolute;
+      top: 0;
+      right: 0;
+      display: block;
+    }
+
+    .top-left-decoration {
+      position: absolute;
+      top: 0;
+      left: 0;
+      display: block;
+    }
+  </style>
+</html>

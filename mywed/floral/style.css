@@ -1,0 +1,51 @@
+body{
+     background: rgb(238,174,202); 
+     background: linear-gradient(90deg, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+     /* background: url(https://marketplace.canva.com/EAFOjz9XxKg/1/0/900w/canva-vintage-background-with-roses-floral-illustration-phone-wallpaper-JJkzkDZlKaY.jpg); */
+     background: url(https://marketplace.canva.com/EAF8ic-xx8M/1/0/900w/canva-brown-pastel-simple-watercolor-floral-background-instagram-story-p0wvcrhReQw.jpg);
+    }
+    
+.container {
+    max-width: 840px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin: auto;
+    /* background: url(https://images.rawpixel.com/image_800/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvcm00OTYtcG9zdGVyYmctMDUtbDA2Z3J1OG4uanBn.jpg); */
+}
+
+.bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    margin: auto;
+    text-align: center;
+
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+}
+
+.bg img {
+    width: 100%;
+    height: 100%;
+    max-width: 840px;
+}
+
+.intro{
+    height: 80vh;
+    /* background: url(https://t4.ftcdn.net/jpg/04/76/42/55/360_F_476425599_9K5AAlOBKPz8If0x8lSbZKdleYJ8nxZS.jpg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; */
+}
+
+.wedding {
+    height: 80vh;
+    /* background: url(https://img.freepik.com/free-psd/watercolor-wedding-border-design_23-2151179952.jpg?w=2000&t=st=1713414427~exp=1713415027~hmac=a21b3ff…);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center; */
+}

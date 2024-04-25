@@ -1,0 +1,749 @@
+:root,
+* {
+  color-scheme: only light;
+}
+
+/* Firefox */
+@media (prefers-color-scheme: dark) {
+  :root {
+    color-scheme: light;
+    background: white !important;
+  }
+}
+
+/* Chrome */
+@media (forced-colors: active) {
+  :root {
+    color-scheme: light;
+    background: white !important;
+  }
+}
+
+body {
+  background: white;
+  /* background: linear-gradient(#ffffff, #ffffff) !important; */
+}
+
+.container {
+  /* max-width: 840px; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin: auto;
+  text-align: center;
+  overflow: hidden;
+}
+
+.intro,
+.wedding,
+.reception,
+.tq {
+  position: relative;
+  height: 80vh;
+  /* max-height: 640px; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background: white; */
+}
+
+.intro {
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0) 57%,
+    rgba(247, 225, 167, 0.24431022408963587) 86%,
+    rgba(247, 225, 167, 0.7877275910364145) 98%
+  );
+}
+
+.wedding {
+  background: linear-gradient(
+    154deg,
+    rgba(255, 255, 255, 0) 57%,
+    rgba(247, 225, 167, 0.24431022408963587) 76%,
+    rgba(247, 225, 167, 0.7877275910364145) 95%
+  );
+}
+
+.tq {
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 57%,
+    rgba(247, 225, 167, 0.24431022408963587) 86%,
+    rgba(247, 225, 167, 0.7877275910364145) 98%
+  );
+}
+
+.intro .top-left-decoration {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 50%;
+  /* clip-path: polygon(0 0, 0 100%, 100% 100%); */
+  /* transform: rotate(90deg); */
+  /* rotate: 90deg; */
+}
+
+.intro .top-right-decoration {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 50%;
+  /* clip-path: polygon(0 0, 100% 0, 100% 100%); */
+}
+
+.intro .image-bottom {
+  position: absolute;
+  bottom: 20%;
+  z-index: 0;
+}
+
+.image-border-flower {
+  position: absolute;
+  bottom: 0;
+  z-index: 0;
+  width: 100%;
+  height: 156px;
+  background: url(https://img.freepik.com/premium-photo/luxurious-golden-flower-banner-wallpaper-generative-ai_887552-4432.jpg);
+  background-repeat: repeat;
+  /* transform: rotate(180deg); */
+}
+
+.image-top {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  height: 156px;
+  /* height: 80px;
+    background: url(https://thumbs.dreamstime.com/b/peacock-feather-vector-seamless-pattern-gold-elegant-floral-background-abstract-geometric-texture-golden-peacock-feather-cont-198524909.jpg); */
+  background: url(https://img.freepik.com/premium-photo/luxurious-golden-flower-banner-wallpaper-generative-ai_887552-4432.jpg);
+  background-repeat: repeat;
+  transform: rotate(180deg);
+}
+
+.image-thick-border {
+  position: absolute;
+  top: 0;
+  z-index: 0;
+  width: 100%;
+  height: 80px;
+  background: url(https://thumbs.dreamstime.com/b/peacock-feather-vector-seamless-pattern-gold-elegant-floral-background-abstract-geometric-texture-golden-peacock-feather-cont-198524909.jpg);
+  background-repeat: repeat;
+}
+
+.wedding {
+  /* max-height: 1240px; */
+}
+
+.wedding .temple {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  max-width: 640px;
+  opacity: 0.75;
+  pointer-events: none;
+}
+
+.wedding .diya {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  height: 480px;
+}
+
+.reception {
+  background: white;
+  max-height: 1040px;
+}
+
+.reception .left-decor {
+  position: absolute;
+  left: -212px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(90deg);
+  width: 480px;
+  /* z-index: -1; */
+  background: #fff;
+}
+
+.reception .right-decor {
+  position: absolute;
+  right: -212px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(-90deg);
+  width: 480px;
+  /* z-index: -1; */
+  background: #fff;
+}
+
+.family {
+  position: relative;
+}
+
+.tree {
+  width: 100%;
+  margin-top: 100px;
+}
+
+.ending {
+  position: absolute;
+  bottom: 0;
+  height: 150px;
+  width: 100%;
+  background: url(https://www.shutterstock.com/image-illustration/seamless-golden-floral-border-260nw-655268008.jpg);
+  background-size: 50%;
+}
+
+.image-end {
+  position: absolute;
+  bottom: 0;
+  z-index: 11;
+  width: 100%;
+  height: 200px;
+  background: url(https://img.freepik.com/premium-photo/luxurious-golden-flower-banner-wallpaper-generative-ai_887552-4432.jpg);
+  background-repeat: repeat;
+}
+
+.tq .end {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  z-index: -1;
+}
+
+.tq .frame {
+  position: absolute;
+}
+
+.tq h1,
+.tq h3 {
+  margin: 0;
+}
+
+h1 {
+  font-size: 5rem;
+  color: #92924b;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #99590e;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #a59083;
+  margin-top: 0.2rem;
+  margin-bottom: 4rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  color: #92924b;
+  font-weight: bold;
+  cursor: pointer;
+}
+.calendar,
+.google-maps,
+.apple-maps {
+  width: 40px;
+  margin: 10px;
+}
+
+#apple-maps-1, #apple-maps-2{
+  display: none;
+}
+
+@media only screen and (orientation: landscape) {
+  .intro,
+  .wedding,
+  .reception,
+  .tq {
+    height: 90vh;
+    min-height: 960px;
+  }
+
+  /* .intro {
+    min-height: 800px;
+  }
+  .wedding {
+    min-height: 960px;
+  }
+  .reception {
+    min-height: 960px;
+  }
+  .tq {
+    min-height: 960px;
+  } */
+
+  .wedding .temple {
+    max-width: 40vw;
+  }
+}
+
+@keyframes corner-flower {
+  from {
+    -webkit-transform: scale(0.2);
+    transform: scale(0.2);
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.intro .top-left-decoration {
+  -webkit-animation: corner-flower 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: corner-flower 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  transform-origin: 0% 0%;
+}
+
+.intro .top-right-decoration {
+  -webkit-animation: corner-flower 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  animation: corner-flower 1s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+  transform-origin: 100% 0;
+}
+
+.intro .image-bottom {
+  animation: corner-flower 1s cubic-bezier(0.39, 0.575, 0.565, 1) both 1s;
+  opacity: 1;
+}
+
+.intro-details {
+  animation: corner-flower 1s cubic-bezier(0.39, 0.575, 0.565, 1) both 1.5s;
+}
+
+.intro-details h1 {
+  margin: 0;
+}
+
+.intro-details h2 {
+  font-size: 3rem;
+  margin: 0;
+}
+
+@keyframes recep-flower {
+  from {
+    opacity: 0;
+    clip-path: circle(10%);
+  }
+  to {
+    opacity: 1;
+    clip-path: circle(100%);
+  }
+}
+
+.left-decor,
+.right-decor {
+  opacity: 0;
+}
+
+.animate .left-decor,
+.animate .right-decor {
+  animation: recep-flower 3s cubic-bezier(0.39, 0.575, 0.565, 1) both;
+}
+
+@keyframes glow {
+  from {
+    opacity: 0.2;
+    background: rgb(252, 225, 114);
+    height: 10px;
+    box-shadow: 0 0 1px 8px rgb(255, 196, 59);
+  }
+  to {
+    opacity: 0.5;
+    background: rgb(255, 196, 59);
+    height: 11px;
+    box-shadow: 0 0 15px 20px rgb(252, 225, 114);
+  }
+}
+
+.animate .diya-light {
+  height: 20px;
+  width: 10px;
+  display: block;
+  position: absolute;
+  z-index: 22;
+  /* top: 395px;
+    left: 70px; */
+  border-radius: 60%;
+  /* clip-path: ellipse(38% 36%); */
+  animation: glow 1s cubic-bezier(0.39, 0.575, 0.565, 1) alternate infinite;
+}
+
+.diya-light-1 {
+  top: 395px;
+  left: 70px;
+  animation-delay: 0s;
+  animation-duration: 1s;
+}
+
+.diya-light-2 {
+  top: 150px;
+  left: 70px;
+  animation-delay: 1s;
+  animation-duration: 1.5s;
+}
+
+.diya-light-3 {
+  top: 275px;
+  left: 129px;
+  animation-delay: 0.5s;
+  animation-duration: 2.5s;
+}
+
+.diya-light-4 {
+  top: 345px;
+  left: 188px;
+  animation-delay: 2s;
+  animation-duration: 1s;
+}
+
+@keyframes text-shadow-drop-center {
+  0% {
+    font-size: 18px;
+    letter-spacing: 1px;
+  }
+  100% {
+    /* font-size: 20px; */
+    letter-spacing: 2px;
+  }
+}
+
+.actions:hover {
+  animation: text-shadow-drop-center 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+}
+
+@keyframes temple-grow {
+  0% {
+    clip-path: polygon(0 85%, 100% 80%, 100% 100%, 0 100%);
+  }
+  20% {
+    clip-path: polygon(0 69%, 100% 68%, 100% 100%, 0 100%);
+  }
+  40% {
+    clip-path: polygon(0 57%, 100% 57%, 100% 100%, 0 100%);
+  }
+  80% {
+    clip-path: polygon(0 33%, 100% 30%, 100% 100%, 0 100%);
+  }
+  100% {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+.animate .temple {
+  animation: temple-grow 3s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
+}
+
+@keyframes move-grade {
+  0% {
+    background-image: linear-gradient(
+        0deg,
+        rgb(255, 255, 255) 0%,
+        rgba(232, 171, 22, 1) 100%
+      )
+      1;
+  }
+  25% {
+    background-image: linear-gradient(
+        90deg,
+        rgb(255, 255, 255) 0%,
+        rgba(232, 171, 22, 1) 100%
+      )
+      1;
+  }
+  50% {
+    background-image: linear-gradient(
+        180deg,
+        rgb(255, 255, 255) 0%,
+        rgba(232, 171, 22, 1) 100%
+      )
+      1;
+  }
+  75% {
+    background-image: linear-gradient(
+        270deg,
+        rgb(255, 255, 255) 0%,
+        rgba(232, 171, 22, 1) 100%
+      )
+      1;
+  }
+  100% {
+    background-image: linear-gradient(
+        360deg,
+        rgba(255, 255, 255) 0%,
+        rgba(232, 171, 22, 1) 100%
+      )
+      1;
+  }
+}
+
+@keyframes shine {
+  to {
+    background-position: 200% center;
+  }
+}
+
+.reception {
+  /* b: linear-gradient(to right, #fff 20%, #fff 40%, #ECD08C 50%, #ECD08C 55%, #fff 70%, #fff 100%);
+      background-size: 200% auto;
+      background-position: 64.6% center;
+      animation: shine 5s cubic-bezier(0.250, 0.460, 0.450, 0.940) both infinite; */
+  background: #fff;
+}
+
+.shine-container {
+  /* position: absolute; */
+  /* transform: translateX(-50%) translateY(-50%);
+    top: 50%;
+    left: 50%; */
+  margin: 125px;
+  padding: 15px 15px;
+  background-image: linear-gradient(-45deg, #ffff, #ecd08c, rgb(186, 133, 0));
+  background-size: 400% 400%;
+  animation: mymove 2s linear infinite;
+  border: 1px solid #d19709;
+}
+
+@keyframes mymove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2024-4-20 23:0:57
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation bounce-top
+ * ----------------------------------------
+ */
+@-webkit-keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+    transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 1;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+@keyframes bounce-top {
+  0% {
+    -webkit-transform: translateY(-45px);
+    transform: translateY(-45px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  24% {
+    opacity: 1;
+  }
+  40% {
+    -webkit-transform: translateY(-24px);
+    transform: translateY(-24px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  65% {
+    -webkit-transform: translateY(-12px);
+    transform: translateY(-12px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  82% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  93% {
+    -webkit-transform: translateY(-4px);
+    transform: translateY(-4px);
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+  }
+  25%,
+  55%,
+  75%,
+  87% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+  }
+  100% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    -webkit-animation-timing-function: ease-out;
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+}
+
+.animate .bounce-top-1 {
+  -webkit-animation: bounce-top 0.9s both 1s;
+  animation: bounce-top 0.9s both 1s;
+}
+
+.animate .bounce-top-2 {
+  -webkit-animation: bounce-top 0.9s both 2s;
+  animation: bounce-top 0.9s both 2s;
+}
+
+.animate .bounce-top-3 {
+  opacity: 0;
+  -webkit-animation: bounce-top 0.9s both 3s;
+  animation: bounce-top 0.9s both 3s;
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2024-4-21 0:11:59
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation flip-horizontal-bottom
+ * ----------------------------------------
+ */
+@keyframes flip-horizontal-bottom {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+    opacity: 0.5;
+  }
+  100% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    opacity: 1;
+  }
+}
+
+/* ----------------------------------------------
+ * Generated by Animista on 2024-4-21 0:16:51
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
+/**
+ * ----------------------------------------
+ * animation text-focus-in
+ * ----------------------------------------
+ */
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+
+.animate .frame {
+  animation: text-focus-in 0.6s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.animate.tq h1 {
+  animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.animate.tq h3 {
+  animation: text-focus-in 0.8s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation-delay: 0.5s;
+}
