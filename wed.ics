@@ -1,0 +1,12 @@
+BEGIN:VEVENT
+SUMMARY:Hari Wedding - Rajan Family
+LOCATION:Natesa pillai mahal, Mannargudi
+URL:https://ragavantar.github.io/mywedding/
+DESCRIPTION:We humbly request your esteemed presence at our Son's wedding to bless us with your love and wishes.
+DTSTART;TZID=Asia/Calcutta:20240519T103000
+DTEND;TZID=Asia/Calcutta:20240519T114500
+BEGIN:VALARM
+TRIGGER:-PT24H
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT

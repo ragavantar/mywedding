@@ -1,0 +1,12 @@
+BEGIN:VEVENT
+SUMMARY:Hari Reception - Rajan Family
+LOCATION:Saaral party hall, Madambakkam
+URL:https://ragavantar.github.io/mywedding/
+DESCRIPTION:We humbly request your esteemed presenceat our Son's reception to bless us with yourlove and wishes.
+DTSTART;TZID=Asia/Calcutta:20240526T183000
+DTEND;TZID=Asia/Calcutta:20240526T220000
+BEGIN:VALARM
+TRIGGER:-PT24H
+ACTION:DISPLAY
+END:VALARM
+END:VEVENT
