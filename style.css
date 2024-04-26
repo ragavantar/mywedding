@@ -187,7 +187,7 @@ body {
 
 .tree {
   width: 100%;
-  margin-top: 100px;
+  margin-top: 90px;
 }
 
 .ending {
@@ -523,6 +523,9 @@ a {
   background-size: 400% 400%;
   animation: mymove 2s linear infinite;
   border: 1px solid #d19709;
+
+  display: none;
+  /* HIDE RECEPTION */
 }
 
 @keyframes mymove {
