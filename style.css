@@ -243,6 +243,10 @@ h3 {
   margin-bottom: 4rem;
 }
 
+h1, h2, h3 {
+  z-index: 2;
+}
+
 a {
   text-decoration: none;
 }
@@ -385,31 +389,31 @@ a {
   animation: glow 1s cubic-bezier(0.39, 0.575, 0.565, 1) alternate infinite;
 }
 
-.diya-light-1 {
+.animate .diya-light-1 {
   top: 395px;
   left: 70px;
   animation-delay: 0s;
   animation-duration: 1s;
 }
 
-.diya-light-2 {
+.animate .diya-light-2 {
   top: 150px;
   left: 70px;
   animation-delay: 1s;
-  animation-duration: 1.5s;
+  animation-duration: 2s;
 }
 
-.diya-light-3 {
+.animate .diya-light-3 {
   top: 275px;
   left: 129px;
   animation-delay: 0.5s;
-  animation-duration: 2.5s;
+  animation-duration: 3s;
 }
 
-.diya-light-4 {
+.animate .diya-light-4 {
   top: 345px;
   left: 188px;
-  animation-delay: 2s;
+  animation-delay: 1.5s;
   animation-duration: 1s;
 }
 
@@ -513,7 +517,7 @@ a {
   /* transform: translateX(-50%) translateY(-50%);
     top: 50%;
     left: 50%; */
-  margin: 125px;
+  margin: 85px;
   padding: 15px 15px;
   background-image: linear-gradient(-45deg, #ffff, #ecd08c, rgb(186, 133, 0));
   background-size: 400% 400%;
