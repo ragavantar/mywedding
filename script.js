@@ -11,6 +11,9 @@ window.onload = (event) => {
     document.getElementById("apple-maps-1").style.display = "block";
     document.getElementById("apple-maps-2").style.display = "block";
   }
+
+  document.body.addEventListener("mousedown", mouseDown);
+  // document.body.addEventListener("mousedown", mouseDown, { once: true });
 };
 
 const observer = new IntersectionObserver(
@@ -32,3 +35,30 @@ const squares = document.querySelectorAll(".section");
 
 // Loop over the elements and add each one to the observer
 squares.forEach((element) => observer.observe(element));
+
+function mouseDown() {
+  console.log("------ down");
+  // document.getElementById("audio").muted = true;
+  playPromise = document.getElementById("audio").play();
+  if (playPromise !== undefined) {
+    playPromise
+      .then(function () {
+        // Automatic playback started!
+        document.getElementById("musicicon").display = true;
+        document.body.removeEventListener("mousedown", mouseDown);
+      })
+      .catch(function (error) {
+        // Automatic playback failed.
+        // Show a UI element to let the user manually start playback.
+      });
+  }
+  // document.getElementById("audio").muted = false;
+}
+
+function playpause() {
+  if (document.getElementById("audio").paused) {
+    document.getElementById("audio").play();
+  } else {
+    document.getElementById("audio").pause();
+  }
+}
