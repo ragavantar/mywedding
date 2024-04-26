@@ -45,6 +45,7 @@ function mouseDown() {
       .then(function () {
         // Automatic playback started!
         document.getElementById("musicicon").display = true;
+        document.getElementById("musicicon").style.pointerEvents = "all";
         document.body.removeEventListener("mousedown", mouseDown);
       })
       .catch(function (error) {
@@ -57,8 +58,10 @@ function mouseDown() {
 
 function playpause() {
   if (document.getElementById("audio").paused) {
+    console.log("======= play");
     document.getElementById("audio").play();
   } else {
+    console.log("======= pause");
     document.getElementById("audio").pause();
   }
 }

@@ -756,7 +756,7 @@ a {
 }
 
 
-#musicicon img {
+#musicicon {
   border: 2px solid rgb(180, 113, 13);
   border-radius: 50%;
   width: 100px;
@@ -765,4 +765,5 @@ a {
   bottom: 20px;
   right: 20px;
   background: white;
+  pointer-events: none;
 }
