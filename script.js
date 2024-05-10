@@ -1,5 +1,10 @@
 window.onload = (event) => {
   console.log("page is fully loaded");
+
+  if (window.location.search.includes("showreception")) {
+    document.getElementById("recep").style.display = "block";
+  }
+
   var isApple = /iPad|iPhone|iPod|Mac/.test(navigator.userAgent);
   var isMac = navigator.platform.toUpperCase().indexOf("MAC") >= 0;
   var isMacLike = navigator.platform.match(/(Mac|iPhone|iPod|iPad)/i)
