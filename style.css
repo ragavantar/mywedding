@@ -524,7 +524,7 @@ a {
   animation: mymove 2s linear infinite;
   border: 1px solid #d19709;
 
-  display: none;
+  /* display: none; */
   /* HIDE RECEPTION */
 }
 
